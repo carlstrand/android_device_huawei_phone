@@ -1,0 +1,2 @@
+add_lunch_combo carbon_huawei_phone-userdebug
+add_lunch_combo carbon_huawei_phone-user
