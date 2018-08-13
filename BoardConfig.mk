@@ -16,7 +16,6 @@
 # inherit from hisi common 
 -include device/huawei/common/BoardConfigCommon.mk
 
-BOARD_BUILD_DISABLED_VBMETAIMAGE := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phone
 
