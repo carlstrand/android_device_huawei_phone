@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_huawei_phone.mk
+    $(LOCAL_DIR)/omni_blanc.mk
