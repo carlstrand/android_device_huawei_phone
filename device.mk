@@ -54,5 +54,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
 
 # NFC Hal Name
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.hardware.nfc_nci=pn54x.default    
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.hardware.nfc_nci=pn54x.default
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
+	ro.build.version.codename=$(PLATFORM_VERSION_CODENAME) \
+	ro.build.version.all_codenames=$(PLATFORM_VERSION_ALL_CODENAMES) \
+	ro.build.version.release=$(PLATFORM_VERSION) \
+	ro.build.version.security_patch=$(PLATFORM_SECURITY_PATCH) \
+	ro.adb.secure=0 \
+    persist.sys.usb.config=adb
