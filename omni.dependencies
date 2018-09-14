@@ -1,7 +1,7 @@
 [
   {
     "repository": "carlstrand/proprietary_vendor_huawei_vndk",
-    "target_path": "vendor/huawei/vndk",
+    "target_path": "vendor/huawei/common",
     "branch": "cr-6.1"
 }, {
     "repository": "carlstrand/android_device_huawei_common",
