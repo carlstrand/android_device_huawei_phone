@@ -15,7 +15,7 @@
 #
 
 # Device Path
-DEVICE_PATH := device/huawei/phone
+DEVICE_PATH := device/huawei/blanc
 
 # Inherit from common
 $(call inherit-product, device/huawei/common/device-common.mk)
