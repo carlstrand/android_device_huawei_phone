@@ -21,8 +21,8 @@ DEVICE_PATH := device/huawei/blanc
 $(call inherit-product, device/huawei/common/device-common.mk)
 
 # Phone specific overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
+#DEVICE_PACKAGE_OVERLAYS += \
+#    $(DEVICE_PATH)/overlay \
 
 # LCD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -55,12 +55,3 @@ PRODUCT_COPY_FILES += \
 
 # NFC Hal Name
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.hardware.nfc_nci=pn54x.default
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-	ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
-	ro.build.version.codename=$(PLATFORM_VERSION_CODENAME) \
-	ro.build.version.all_codenames=$(PLATFORM_VERSION_ALL_CODENAMES) \
-	ro.build.version.release=$(PLATFORM_VERSION) \
-	ro.build.version.security_patch=$(PLATFORM_SECURITY_PATCH) \
-	ro.adb.secure=0 \
-    persist.sys.usb.config=adb
