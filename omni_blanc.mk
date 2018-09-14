@@ -17,7 +17,6 @@
 $(call inherit-product, device/huawei/blanc/device.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, device/omni/sepolicy/common/sepolicy.mk)
 
 # Device Path
 DEVICE_PATH := device/huawei/blanc
