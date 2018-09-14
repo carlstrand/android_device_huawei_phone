@@ -14,21 +14,17 @@
 # limitations under the License.
 #
 
-# Inherit device configuration
-$(call inherit-product, device/huawei/phone/device.mk)
-
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
-# Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, device/huawei/blanc/device.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, device/omni/sepolicy/common/sepolicy.mk)
 
 # Device Path
-DEVICE_PATH := device/huawei/phone
+DEVICE_PATH := device/huawei/blanc
 
 # Phone specific overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-carbon
+#DEVICE_PACKAGE_OVERLAYS += \
+#    $(DEVICE_PATH)/overlay-carbon
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1920
@@ -37,10 +33,6 @@ TARGET_SCREEN_WIDTH := 1080
 # Device identifier
 PRODUCT_MANUFACTURER := Huawei
 PRODUCT_BRAND := Android
-PRODUCT_NAME := carbon_huawei_phone
-PRODUCT_DEVICE := phone
-PRODUCT_MODEL := CarbonRom on Huawei
-
-# CarbonRom Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
+PRODUCT_NAME := omni_blanc
+PRODUCT_DEVICE := blanc
+PRODUCT_MODEL := Mate 10 Pro
