@@ -1,2 +1,1 @@
-add_lunch_combo carbon_huawei_phone-userdebug
-add_lunch_combo carbon_huawei_phone-user
+add_lunch_combo omni_blanc-userdebug
