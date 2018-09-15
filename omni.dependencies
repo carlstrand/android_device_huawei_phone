@@ -1,13 +1,3 @@
 [
-  {
-  "remote":      "lumi",
-    "repository": "proprietary_vendor_huawei_vndk",
-    "target_path": "vendor/huawei/common",
-    "branch": "cr-6.1"
-}, {
-  "remote":      "lumi",
-    "repository": "android_device_huawei_common",
-    "target_path": "device/huawei/common",
-    "branch": "cr-6.1"
-  }
+
 ]
